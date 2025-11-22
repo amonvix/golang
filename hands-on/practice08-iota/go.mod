@@ -1,3 +1,3 @@
 module practice08-iota
 
-go 1.25.3
+go 1.23.3

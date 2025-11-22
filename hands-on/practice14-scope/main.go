@@ -7,7 +7,7 @@ package main
 import (
 	"fmt"
 
-	"hands-on/practice14-scope/furtherexplored"
+	"practice14-scope/furtherexplored"
 )
 
 // x is in "package block" scope

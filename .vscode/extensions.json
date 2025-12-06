@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "hediet.vscode-drawio",
-        "travisthetechie.write-good-linter"
+        "travisthetechie.write-good-linter",
+        "esbenp.prettier-vscode"
     ]
 }

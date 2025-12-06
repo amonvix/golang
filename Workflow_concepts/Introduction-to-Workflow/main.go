@@ -6,12 +6,16 @@ import (
 	"time"
 )
 
+func init() {
+	fmt.Println("Begin initialization")
+}
+
 func main() {
 	// SEQUENCE
 	fmt.Println("this is the first statement to run")
 	fmt.Println("this is the second statement to run")
 	x := 40 // this is the third statement to run
-	y := 4  // this is the fouth statement to run
+	y := 5  // this is the fouth statement to run
 	fmt.Printf(" x=%v \n y=%v", x, y)
 
 	// CONDITIONAL
@@ -130,8 +134,8 @@ func main() {
 	// rime.Millisecond is a constant in the time package
 	// https://pkg.go.dev/time#pkg-constants
 
-	d1 := time.Duration(r.int63n(250))
-	d2 := time.Duration(r.int63n(250))
+	d1 := time.Duration(r.Int63n(250))
+	d2 := time.Duration(r.Int63n(250))
 	// fmt.Printf("%v \t %T\n", d1, d1)
 	// time.Sleep(d1 * time.Millisecond)
 	// fmt.Println("Done")

@@ -40,4 +40,14 @@ func main() {
 		time.Sleep(d2 * time.Millisecond)
 		ch2 <- 42
 	}()
+
+	// A select statement chooses which of a set of possible send or receive operations will proceed.
+	// It looks similar to a switch statement but with the cases all referring to communication operations.
+	// https://go.dev/ref/spec#select_statements
+	select {
+	case v1 := <-ch1:
+		fmt.Printf("received %v from ch1\n", v1)
+	case v2 := <-ch2:
+		fmt.Printf("received %v from ch2\n", v2)
+	}
 }

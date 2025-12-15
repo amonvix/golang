@@ -28,10 +28,17 @@ func main() {
 	} else {
 		fmt.Println("\nGreater than, the meaning of life")
 	}
+
+	if x%2 == 0 {
+		fmt.Printf("\n%v é par\n", x)
+	} else {
+		fmt.Printf("\n%v é ímpar\n", x)
+	}
 	/*
 		"If" statements specify the conditional execution of two branches
 		according to the value of boolean expression. If the expression evaluates
 		to true, the if" branch is executed, otherwise, if present, the else "branch" is executed
 	*/
 	//  https://go.dev/ref/spec#If_statements
+
 }

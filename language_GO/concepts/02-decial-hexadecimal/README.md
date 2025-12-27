@@ -1,4 +1,4 @@
-# 02 – Decimal, Binary and Hexadecimal (fmt.Printf)
+# 02 – Decimal, Binary and Hexadecimal (fmt.Printf) ![Go](https://img.shields.io/badge/Language-Go-blue)
 
 This example shows how Go allows the same integer value to be **represented and displayed in different numeric bases** using `fmt.Printf` format verbs.
 

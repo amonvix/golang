@@ -1,21 +1,20 @@
 # Values, Types, Conversion, Scope & Housekeeping
 
-## Inspecting Inferred Types at Runtime
+## Type Inference and Variable Scope in Go
 
-This lesson builds on Go’s type inference by showing how inferred types can be **inspected at runtime** using formatted output.
-
-The focus here is not changing types, but **observing what Go decided**.
+This lesson expands on type inference by introducing **variable scope**, showing how Go controls where variables can be accessed and how visibility works across functions.
 
 ---
 
 ## Concepts Covered
 
 - Type inference with `:=`
-- Numeric literals and default types
-- Floating-point numbers (`float64`)
-- Complex numbers (`complex128`)
+- Explicit variable declaration with `var`
+- Package-level (global) scope
+- Function-level (local) scope
+- Block scope
+- Access rules between functions
 - Runtime type inspection using `%T`
-- Basic program structure and housekeeping
 
 ---
 
@@ -23,48 +22,53 @@ The focus here is not changing types, but **observing what Go decided**.
 
 The goal of this exercise is to understand:
 
-- How Go assigns types during compilation
-- How to verify inferred types during execution
-- How different literals affect type inference
-- Why complex numbers behave differently from real numbers
+- The difference between global and local variables
+- How scope affects variable accessibility
+- How Go enforces strict scope rules at compile time
+- How type inference behaves across different scopes
 
 ---
 
 ## Explanation
 
-Go infers variable types at compile time based on the assigned value:
+Go determines variable scope based on **where the variable is declared**:
 
-- Integer literals default to `int`
-- Decimal literals default to `float64`
-- Any expression containing `i` becomes a complex number (`complex128`)
+- Variables declared at the package level are accessible throughout the package
+- Variables declared inside a function are only accessible within that function
+- Variables declared inside a block are limited to that block
+- Variables declared in one function are **not accessible** from another function unless passed explicitly
 
-Using `fmt.Printf` with the `%T` verb allows the program to print the inferred type of each variable, confirming Go’s internal decisions.
+Type inference (`:=`) still applies normally, but **scope rules always win**.
 
 ---
 
 ## Example Behavior
 
-- `v := 42` → inferred as `int`
-- `i := 88` → inferred as `int`
-- `f := 3.142` → inferred as `float64`
-- `g := 0.867 + 5i` → inferred as `complex128`
+- `var x int = 43`  
+  → Package-level variable, accessible inside `main`
 
-Each variable’s type is printed directly to the terminal at runtime.
+- `v := 42`, `i := 88`, `f := 3.142`, `g := 0.867 + 5i`  
+  → Function-scoped variables inferred as `int`, `int`, `float64`, and `complex128`
+
+- `z := 45` (inside another function)  
+  → Only accessible within that function
+
+Attempting to access a variable outside its scope results in a **compile-time error**, not a runtime error.
 
 ---
 
 ## Key Takeaways
 
-- Type inference happens before the program runs
-- `%T` is a diagnostic tool, not a type converter
-- Literal representation matters more than variable names
-- Complex numbers are native and strongly typed in Go
+- Scope is enforced at **compile time**
+- Global variables are accessible inside functions, but not the other way around
+- Type inference does not bypass scope rules
+- `%T` is useful to inspect inferred types, not visibility
+- Functions are natural scope boundaries in Go
 
 ---
 
 ## Notes
 
-This example is intentionally simple and focused on observation.  
-No casting. No conversions. Just clarity.
-
-If you don’t know the type, ask Go — it will tell you.
+This example intentionally demonstrates both **what works** and **what fails**.  
+If Go lets it compile, it’s valid.  
+If it doesn’t, it’s protecting you — aggressively and correctly.

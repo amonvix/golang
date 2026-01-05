@@ -21,6 +21,17 @@ The focus is on **idiomatic Go**, **clear control flow**, **concurrency**, **tes
 
 ## workflow
 
+- [01 - Go Program Workflow: Execution, Control Flow, and Concurrency](./language_GO/workflow/01-Introduction-to-workflow/README.md)
+- [02 - Conditional Execution in Go](./language_GO/workflow/02-conditional/README.md)
+- [03 - Logical Operators in Go](./language_GO/workflow/03-logical-operators/README.md)
+- [04 - Modulus Operator and Conditional Iteration in Go](./language_GO/workflow/04-modules/README.md)
+- [05 - Switch Statements and Fallthrough in Go](./language_GO/workflow/05-switch_statement/README.md)
+- [06 - Simple Statements and the Comma-Ok Idiom in Go](./language_GO/workflow/06-statement_statement-comma_ok/README.md)
+- [07 - Select Statements and Concurrency in Go](./language_GO/workflow/07-select-for-concurrency/README.md)
+- [08 - For Loops and Iteration Patterns in Go](./language_GO/workflow/08-for-loop/README.md)
+- [09 - Nested Loops and Iteration Composition in Go](./language_GO/workflow/09-nested-loops/README.md)
+- [10 - For Range and Data Structure Iteration in Go](./language_GO/workflow/10-for-range/README.md)
+
 ## hands-on
 
 ## notes

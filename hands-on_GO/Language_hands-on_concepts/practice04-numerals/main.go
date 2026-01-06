@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+// Here is necessary to show all the types os numerals learned using examples of each one.
+
 func main() {
 	y := 42
 	z := 42.0

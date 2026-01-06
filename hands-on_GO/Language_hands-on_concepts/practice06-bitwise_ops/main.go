@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// Show that you understand the big and the small ones numbers and their usage in bitwise ops
+
 const (
 	Big   = 1 << 100
 	Small = Big >> 99

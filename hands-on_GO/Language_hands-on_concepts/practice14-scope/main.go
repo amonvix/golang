@@ -1,9 +1,12 @@
 package main
 
-// the imported package "fmt"
-// is in the "file block" scope
-// of this file
+// Using the importing learning to access functions outside the current file
 
+/*
+the imported package "fmt"
+is in the "file block" scope
+of this file
+*/
 import (
 	"fmt"
 

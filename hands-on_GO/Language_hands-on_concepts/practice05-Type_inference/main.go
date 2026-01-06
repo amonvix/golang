@@ -1,5 +1,7 @@
 package main
 
+// Show tipes of inferences in the follow numbers
+
 import "fmt"
 
 //change the original value of v in the example bellow replacing the nunber by

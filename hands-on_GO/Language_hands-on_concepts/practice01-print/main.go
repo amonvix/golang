@@ -1,5 +1,7 @@
 package main
 
+// Create a text using the library fmt and emogis.
+
 import "fmt"
 
 func main() {

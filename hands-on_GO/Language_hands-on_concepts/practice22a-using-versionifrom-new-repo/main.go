@@ -1,5 +1,7 @@
 package main
 
+// The same as the last exercice, but with the external function created by the student
+
 import (
 	"fmt"
 

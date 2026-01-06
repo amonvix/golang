@@ -1,5 +1,7 @@
 package main
 
+// show how to declare all the types of variables saw until now.
+
 import "fmt"
 
 func main() {

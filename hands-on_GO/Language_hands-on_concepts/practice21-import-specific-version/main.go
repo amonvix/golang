@@ -1,5 +1,7 @@
 package main
 
+// Importing an especific version of an external function
+
 import (
 	"fmt"
 

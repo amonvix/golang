@@ -1,5 +1,7 @@
 package main
 
+// Using import from GitHub
+
 import (
 	"fmt"
 

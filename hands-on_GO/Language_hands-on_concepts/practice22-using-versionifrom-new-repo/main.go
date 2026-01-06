@@ -1,5 +1,6 @@
 package main
 
+// How to use the external imported function in the code.
 import (
 	"fmt"
 

@@ -1,5 +1,7 @@
 package main
 
+// Demostrating the differents ways of packages
+
 import "fmt"
 
 var y = 43

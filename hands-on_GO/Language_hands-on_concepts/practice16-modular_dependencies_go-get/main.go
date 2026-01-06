@@ -1,5 +1,7 @@
 package main
 
+// learning the way to "get" functions from external sources
+
 import (
 	"fmt"
 

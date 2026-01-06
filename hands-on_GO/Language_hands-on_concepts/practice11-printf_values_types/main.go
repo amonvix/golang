@@ -1,5 +1,7 @@
 package main
 
+// Show ways to use a formated print
+
 import "fmt"
 
 func main() {

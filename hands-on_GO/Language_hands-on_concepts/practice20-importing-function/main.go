@@ -1,5 +1,7 @@
 package main
 
+// how to import a exernal function. (having in consideration that a function only can be exported if it beggins with a captalize letter)
+
 import (
 	"fmt"
 

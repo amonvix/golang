@@ -1,5 +1,7 @@
 package main
 
+// Let's see some examples of int8 and uint8, and their differences
+
 import "fmt"
 
 var a int8 = 127

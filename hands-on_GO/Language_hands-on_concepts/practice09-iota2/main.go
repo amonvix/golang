@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// Now use IOTA with a pre determinated value to calculate and provide the corretc response
+
 type ByteSize int
 
 const (

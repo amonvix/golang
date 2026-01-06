@@ -1,5 +1,7 @@
 package main
 
+// Now that we compreend the bit wise, use bit shifting in the numbers above
+
 import "fmt"
 
 func main() {

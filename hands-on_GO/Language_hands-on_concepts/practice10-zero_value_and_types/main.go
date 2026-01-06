@@ -1,5 +1,7 @@
 package main
 
+// Show that you learn the types of zero and non informed values
+
 import "fmt"
 
 var zero int

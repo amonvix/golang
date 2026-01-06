@@ -1,5 +1,7 @@
 package main
 
+// A litlle bit of binary, decimal and hexadecimal to fix the usage
+
 import "fmt"
 
 const (

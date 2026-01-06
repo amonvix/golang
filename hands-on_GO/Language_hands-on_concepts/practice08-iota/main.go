@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// Demonstrate the usage of IOTA
+
 const (
 	_ = iota
 	a

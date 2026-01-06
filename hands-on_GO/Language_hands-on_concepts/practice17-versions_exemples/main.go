@@ -1,5 +1,7 @@
 package main
 
+// Working with versioning in the same original external file
+
 import (
 	"fmt"
 

@@ -1,5 +1,7 @@
 package main
 
+// the firt contact with hands-on in the code.
+
 import (
 	"fmt"
 )

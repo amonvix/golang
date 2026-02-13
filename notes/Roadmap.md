@@ -45,8 +45,8 @@ This roadmap groups the core resources used throughout the Go course. It’s des
 
 ## Course Materials
 
-- 💻 **[GitHub Code Repository](#oficial-repo)** – All code used in the course  
-- 🔗 **[A Tour of Go](#a-tour-of-go)** – Interactive official Go tutorial  
+- 💻 **[GitHub Code Repository](https://github.com/GoesToEleven/learn-to-code-go-version-03)** – All code used in the course  
+- 🔗 **[A Tour of Go](https://go.dev/tour/welcome/1)** – Interactive official Go tutorial  
 - 📄 **[Course Outline – Learn to Code Go (v3.18.0 PDF)](#course-outline--learn-to-code-go-v3180-pdf)**
 
 ---
@@ -79,11 +79,7 @@ This roadmap works best if followed in this order:
 
 
 
-## Oficial Repo
-> Oficial repository for the classes [golang](https://github.com/GoesToEleven/learn-to-code-go-version-03)
 
-# A tour of go
-<https://go.dev/tour/welcome/1>
 
 # Course Outline – Learn to Code Go (v3.18.0 PDF)
 <https://att-c.udemycdn.com/2023-07-21_22-40-31-5c11f140d4e15c6e3a09d614e1875328/original.pdf?response-content-disposition=attachment%3B+filename%3Dcourse%2Boutline%2B-%2Blearn%2Bto%2Bcode%2Bgo%2B-%2Bv3.18.0.pdf&Expires=1771011310&Signature=ly-HNXIu3d2LsHxxcqHtZHuxPraQXwaO7vhlNIULFdth3OoEAACDs7IW4MvxM5g5LF8wGLdpK5w85fPC0h0KvQanl8jnavZSKT7tuRGOOSApLDi7I2vbfHeMOC0clVdq4YfHCEwglOGNeXT4TA3IyorfcgDXGdutzDgW5F-0qdGqONowlVyArtlL-ChIm1EiWsMU1CZax0p62WkEGf~fGRmYBTW5Fof-~R6hwtXifZwA00xlf~8iWhOXBjY0lKRxw-sGaL63U2HPAWIuT6yR1anKu9FuYyx5czzuk1pGl1EGW7KQ~q8KVe7ZzdY-LgPF-8ZmKbFDp133IhMcAkNAOQ__&Key-Pair-Id=K3MG148K9RIRF4>

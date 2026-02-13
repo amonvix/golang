@@ -16,3 +16,5 @@ This log exists to reinforce understanding and document growth over time.
 
 - In the first part named concept, I did not created the file exxplaining the usage, only did the exercises. So I had do see all the begin of the
   course to don't let this part in blank. And it was made with all the readme.md explain what the code do and for what is used.
+
+

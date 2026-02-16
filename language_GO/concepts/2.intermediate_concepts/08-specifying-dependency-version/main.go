@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	dogao.From13()
+	dogao.From13() // Here you can use the function imported from the version needed
 
 	s1 := dogao.Latir()
 	s2 := dogao.Latidos()

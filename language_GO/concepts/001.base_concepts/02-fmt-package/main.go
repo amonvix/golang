@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/amonvix/golang/language_GO/concepts/1.base_concepts/02-fmt-package/poker"
+	"github.com/amonvix/golang/language_GO/concepts/001.base_concepts/02-fmt-package/poker"
 )
 
 func main() {

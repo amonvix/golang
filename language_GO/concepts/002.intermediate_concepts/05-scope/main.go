@@ -7,7 +7,7 @@ package main // Declare the main package.
 import ( // Start import block.
 	"fmt" // Import fmt for formatted I/O.
 
-	"github.com/amonvix/golang/language_GO/concepts/2.intermediate_concepts/05-scope/furtherexplored" // Import furtherexplored package.
+	"github.com/amonvix/golang/language_GO/concepts/002.intermediate_concepts/05-scope/furtherexplored" // Import furtherexplored package.
 ) // End import block.
 
 // x is in "package block" scope

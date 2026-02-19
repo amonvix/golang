@@ -1,3 +1,0 @@
-module practice07-bit_shifting
-
-go 1.23.3

@@ -12,12 +12,12 @@ func init() { // Run initialization before main.
 
 func main() { // Program entry point.
 	// SEQUENCE
-	fmt.Println("this is the first statement to run") // Print the first message.
+	fmt.Println("this is the first statement to run")  // Print the first message.
 	fmt.Println("this is the second statement to run") // Print the second message.
-	x := 40 // Set x to 40.
-	y := 5  // Set y to 5.
-	fmt.Println() // Print a blank line.
-	fmt.Printf("\n x=%v \n y=%v", x, y) // Print x and y.
+	x := 40                                            // Set x to 40.
+	y := 5                                             // Set y to 5.
+	fmt.Println()                                      // Print a blank line.
+	fmt.Printf("\n x=%v \n y=%v", x, y)                // Print x and y.
 
 	// x := 40
 	// y := 5
@@ -108,22 +108,48 @@ func main() { // Program entry point.
 		fmt.Printf("z is %v and that is LESS THAN x wich is %v\n", z, x) // Print result.
 	} // End if/else.
 
+	switch {
+	case x < 42:
+		fmt.Println("x is LESS THAN 42")
+	case x == 42:
+		fmt.Println("x is EQUAL TO 42")
+	case x > 42:
+		fmt.Println("x is GREATER THAN 42")
+	default:
+		fmt.Println("this is the default case for x")
+	}
+
 	switch x { // Switch on x.
 	case 40: // Match x == 40.
 		fmt.Println("x is 40") // Print case message.
-		fallthrough // Continue to next case.
+		fallthrough            // Continue to next case.
 	case 41: // Match x == 41.
 		fmt.Println("printed because of ALL OF THE fallthrough statements: x is 41") // Print case message.
-		fallthrough // Continue to next case.
+		fallthrough                                                                  // Continue to next case.
 	case 42: // Match x == 42.
 		fmt.Println("printed because of ALL OF THE fallthrough statements: x is 42") // Print case message.
-		fallthrough // Continue to next case.
+		fallthrough                                                                  // Continue to next case.
 	case 43: // Match x == 43.
 		fmt.Println("printed because of ALL OF THE fallthrough statements: x is 43") // Print case message.
-		fallthrough // Continue to default.
+		fallthrough                                                                  // Continue to default.
 	default: // Default case.
 		fmt.Println("printed because of ALL OF THE fallthrough statements: this is the default case for x") // Print default message.
 	} // End switch.
+
+	// no default fallthrough
+	switch x {
+	case 40:
+		fmt.Println("x is 40")
+		fallthrough
+	case 41:
+		fmt.Println("printed because of fallthrough: x is 41")
+	case 42:
+		fmt.Println("printed because of fallthrough: x is 42")
+	case 43:
+		fmt.Println("printed because of fallthrough: x is 43")
+	default:
+		fmt.Println("printed because of fallthrough: this is the default case for x")
+	}
 
 	// 	concurrency
 	// 	switch on channel
@@ -147,13 +173,23 @@ func main() { // Program entry point.
 
 	go func() { // Start goroutine for ch1.
 		time.Sleep(d1 * time.Millisecond) // Sleep before sending.
-		ch1 <- 41 // Send value to ch1.
+		ch1 <- 41                         // Send value to ch1.
 	}() // End goroutine.
 
 	go func() { // Start goroutine for ch2.
 		time.Sleep(d2 * time.Millisecond) // Sleep before sending.
-		ch2 <- 42 // Send value to ch2.
+		ch2 <- 42                         // Send value to ch2.
 	}() // End goroutine.
+
+	// A "select" statement chooses which of a set of possible send or receive operations will proceed.
+	// It looks similar to a "switch" statement but with the cases all referring to communication operations.
+	// https://go.dev/ref/spec#Select_statements
+	select {
+	case v1 := <-ch1:
+		fmt.Println("value from channel 1", v1)
+	case v2 := <-ch2:
+		fmt.Println("value from channel 2", v2)
+	}
 
 	// LOOPS  /  INTERATIVE
 	// for statements
@@ -181,20 +217,32 @@ func main() { // Program entry point.
 
 	for y < 10 { // Loop while y is less than 10.
 		fmt.Printf("y is %v \t\t\t second for loop\n", y) // Print y.
-		y++ // Increment y.
+		y++                                               // Increment y.
 	} // End while-style loop.
 
 	//  break
 	//  takes you out of the loop
+
+	for {
+		fmt.Printf("y is %v \t\t third  for loop\n", y)
+		if y > 20 {
+			break
+		}
+		y++
+	}
+
+	// continue
+	// takes to next iteration
 	for i := 0; i < 20; i++ { // Loop from 0 to 19.
 		if i%2 != 0 { // Skip odd numbers.
 			continue // Continue to next iteration.
 		} // End if.
 		fmt.Println("Counting even numbers: ", i) // Print even number.
 	} // End for loop.
+
 	//  nested loops
 	for i := 0; i < 5; i++ { // Outer loop.
-		fmt.Println("--") // Print separator.
+		fmt.Println("--")        // Print separator.
 		for j := 0; j < 5; j++ { // Inner loop.
 			fmt.Printf("outer loop %v \t  inner loop %v\n", i, j) // Print indices.
 		} // End inner loop.
@@ -202,10 +250,18 @@ func main() { // Program entry point.
 
 	//  for range loop
 	//  data structures - slices
+	xi := []int{42, 43, 44, 45, 46, 47}
+	for i, v := range xi {
+		fmt.Println("ranging over a slice", i, v)
+	}
+
+	// for range loop
+	// data structures - map
 	m := map[string]int{ // Create a map of names to values.
 		"James":      42, // Add James.
 		"Moneypenny": 32, // Add Moneypenny.
 	} // End map literal.
+
 	for k, v := range m { // Range over the map.
 		fmt.Println("ranging over a map", k, v) // Print key and value.
 	} // End range loop.

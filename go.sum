@@ -2,3 +2,5 @@ github.com/amonvix/dog v0.0.0-20251124002731-f8477fcc6195 h1:VBUDjHdRr1lZ/jDq4sx
 github.com/amonvix/dog v0.0.0-20251124002731-f8477fcc6195/go.mod h1:OGuDqOBdlVarpYbofghRu0nldE7YnYUjb+whqKzL+5A=
 github.com/amonvix/dogao v1.4.0 h1:6822AfDoC/TYJxoLY4IP3lVmKgVeBe91eh9s3RWKy1M=
 github.com/amonvix/dogao v1.4.0/go.mod h1:+nKlSaC4vatOdBzyDAOHbMckiKNb5gcO/thhVd4/O/U=
+github.com/amonvix/golang v0.0.0-20260218221851-c7ec2d0c21e2 h1:USo+vrvFgqT81LoGduouE7WxmF4+HboYyx8GimAUACs=
+github.com/amonvix/golang v0.0.0-20260218221851-c7ec2d0c21e2/go.mod h1:rIrJl5+qG11D2kNfPt8zWF8tFCwKgl6BktCv8uzMc0w=

@@ -15,9 +15,11 @@ what's the benefit of using the "statement statement" idiom?
 */
 
 func main() {
-	for range 99 {
+	c := 1
+	for i:= 0;i<100;i++ {
 		if x := rand.Intn(5); x == 3 {
-			fmt.Println(x)
+			fmt.Printf("iteration %v \t total count %v \t x is %v\n",i , c, x)
+		c++
 		}
 	}
 }

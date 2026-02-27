@@ -6,7 +6,7 @@ import "fmt"
 What do these print:
 
 fmt.Println(true && true)
-fmt.Println(true && false)
+fmt.Println(true && false)g
 fmt.Println(true || true)
 fmt.Println(true || false)
 fmt.Println(!true)
